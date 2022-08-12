@@ -1,0 +1,23 @@
+// Заголовки, общие БЄМ блоки и проче...
+.wrapper {
+  background-color: #fff;
+}
+.button {
+  position: relative;
+  font-family: "Noto Serif";
+  font-weight: 500;
+  font-size: rem(18);
+  line-height: percent(25, 18);
+  text-align: center;
+  color: #ffffff;
+  padding: rem(17) rem(36.5);
+  background-color: #ff715b;
+  display: inline-block;
+  @media (max-width:$mobile){
+      padding: rem(10) rem(25);
+      font-size: rem(12);
+  }
+  &:hover {
+    background-color: #ff9888;
+  }
+}

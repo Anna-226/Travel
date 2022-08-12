@@ -1,0 +1,38 @@
+//<INPUT>
+// Снипет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input {
+  border-radius: 0 !important;
+  //width: rem(240);
+  height: rem(43);
+  display: block;
+  padding: 10px 0px;
+  font-family: "Noto Serif";
+  font-weight: 600;
+  font-size: rem(18);
+  line-height: percent(25,18);
+  color: #ff715b;
+  &::placeholder {
+    font-family: "Noto Serif";
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: 139%;
+    color: #ff715b;
+  }
+  &._focus {
+    border: none;
+  }
+  &._error {
+  }
+}
+textarea.input {
+  resize: none;
+  padding: 0px 0px;
+}

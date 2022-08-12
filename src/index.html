@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="page__container">
+					<div class="main-banner">
+						<!-- Оболочка слайдера -->
+						<div class="main-banner__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="main-banner__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="main-banner__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/main-banner.jpg" alt="">
+									<div class="swiper-slide__header">
+										<div class="swiper-slide__title">It’s Time To Explore The World</div>
+										<a href="" class="swiper-slide__button button">Plan Your Trip</a>
+									</div>
+								</div>
+								<div class="main-banner__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/client.jpg" alt="">
+									<div class="swiper-slide__header">
+										<div class="swiper-slide__title">It’s Time To Explore The World</div>
+										<a href="" class="swiper-slide__button button">Plan Your Trip</a>
+									</div>
+								</div>
+								<div class="main-banner__slide swiper-slide">
+									<img class="swiper-slide__img" src="@img/engine.jpg" alt="">
+									<div class="swiper-slide__header">
+										<div class="swiper-slide__title">It’s Time To Explore The World</div>
+										<a href="" class="swiper-slide__button button">Plan Your Trip</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-banner__controll slider-controll">
+								<!-- Если нужна навигация (влево/вправо) -->
+								<div class="slider-controll__buttons">
+									<button type="button" class="swiper-button-prev"></button>
+									<button type="button" class="swiper-button-next"></button>
+								</div>
+								<div class="slider-controll__timeline"><div class="slider-controll__load"></div></div>
+								<div class="swiper-fraction fraction-controll slider-controll__fraction">
+									<span class="fraction-controll__current">01</span>
+								</div>
+							</div>
+						</div>
+						<div class="searchForm">
+							<div class="searchForm__block">
+								<form action="#" class="form-search">
+									<div class="form-search__item">
+										<label for="destinations">Destinations</label>
+										<select id='destinations' name="searchForm[destinations]" class="form-search__destinations">
+											<option value="1" selected>Arab Egypt</option>
+											<option value="2">Arab Egypt</option>
+											<option value="3">Arab Egypt</option>
+											<option value="4">Arab Egypt</option>
+											<option value="5">Arab Egypt</option>
+											<option value="6">Arab Egypt</option>
+											<option value="7">Arab Egypt</option>
+											<option value="8">Arab Egypt</option>
+											<option value="9">Arab Egypt</option>
+											<option value="10">Arab Egypt</option>
+										</select>
+									</div>
+									<div class="form-search__item form-search__item_datapicker">
+										<label for="checkIn">Check In</label>
+										<input id='checkIn' data-calendar autocomplete="off" type="text" name="form[datapicker]" data-error="Ошибка" placeholder="01 Feb, 2021" class="form-search__datapicker input">
+									</div>
+									<div class="form-search__item form-search__item_range range-block">
+										<label>Price Range</label>
+										<div class="range-block__inputs">
+											<input id="price-start" autocomplete="off" type="text" name="form[priceRange]" data-error="Ошибка" placeholder="$500" class="range-block__input range-block__input_0"> - 
+											<input id="price-end" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="$10,0000" class="range-block__input range-block__input_1">
+										</div>
+										<div class="range-block__field">
+											<div class="range" id="range"></div>
+										</div>
+									</div>
+									<button type="submit" class="form-search__button button">Discover Now</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="services">
+						<div class="services__items">
+							<a href="" class="item-services">
+								<div class="item-services__image"><img src="@img/content_icons/map.svg" alt=""></div>
+								<div class="item-services__title">Choose Destination</div>
+								<div class="item-services__text">Lorem Ipsum is simply dummy text of the printing setting</div>
+							</a>
+							<a href="" class="item-services">
+								<div class="item-services__image"><img src="@img/content_icons/binocular.svg" alt=""></div>
+								<div class="item-services__title">Explore The Place</div>
+								<div class="item-services__text">Lorem Ipsum is simply dummy text of the printing setting</div>
+							</a>
+							<a href="" class="item-services">
+								<div class="item-services__image"><img src="@img/content_icons/backpack.svg" alt=""></div>
+								<div class="item-services__title">Start Your Journey</div>
+								<div class="item-services__text">Lorem Ipsum is simply dummy text of the printing setting</div>
+							</a>
+							<a href="" class="item-services">
+								<div class="item-services__image"><img src="@img/content_icons/ukelele.svg" alt=""></div>
+								<div class="item-services__title">Let’s Enjoy</div>
+								<div class="item-services__text">Lorem Ipsum is simply dummy text of the printing setting</div>
+							</a>
+						</div>
+					</div>
+					<div class="top-distinations">
+						<div class="top-distinations__content">
+							<div class="top-distinations__title">Top <span>Destinations</span> In The World</div>
+							<div class="top-distinations__text">It is a long established fact that a reader will be the distracted by the readable content of a page when looking at its layout from it.</div>
+							<a href="" class="top-distinations__button button">Discover More</a>
+						</div>
+						<div class="top-distinations__cards dragscroll">
+							<a href="" class="city-card">
+								<img class="city-card__picture" src="@img/content-images/Cuba.jpg" alt="">
+								<p class="city-card__name">Cuba City</p>
+							</a>
+							<a href="" class="city-card">
+								<img class="city-card__picture" src="@img/content-images/Paris-City.jpg" alt="">
+								<p class="city-card__name">Paris</p>
+							</a>
+							<a href="" class="city-card">
+								<img class="city-card__picture" src="@img/content-images/japan.jpg" alt="">
+								<p class="city-card__name">Japan</p>
+							</a>
+						</div>
+					</div>
+					<div class="about-us">
+						<div class="about-us__picture-additional">
+							<div class="about-us__picture"><img src="@img/content-images/lighthouse.jpg" alt=""></div>
+						</div>
+						<div class="about-us__content">
+							<div class="about-us__title">We Offering In Total 793 Tours Out The World</div>
+							<div class="about-us__items">
+								<div class="item-about-us">
+									<div class="item-about-us__icon"><img src="@img/content_icons/people.svg" alt=""></div>
+									<div class="item-about-us__article">
+										<div class="item-about-us__title">Best Travel Guide Always For Your Services</div>
+										<div class="item-about-us__text">Travel has helped us to understandsa the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes. Travel has helped us to understand the meaning of life</div>
+									</div>
+								</div>
+								<div class="item-about-us">
+									<div class="item-about-us__icon"><img src="@img/content_icons/people.svg" alt=""></div>
+									<div class="item-about-us__article">
+										<div class="item-about-us__title">World Class Services Provide For You</div>
+									</div>
+								</div>
+								<div class="item-about-us">
+									<div class="item-about-us__icon"><img src="@img/content_icons/earbuds.svg" alt=""></div>
+									<div class="item-about-us__article">
+										<div class="item-about-us__title">24/7 Strong Customer Support</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
